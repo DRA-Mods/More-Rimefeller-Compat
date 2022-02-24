@@ -11,13 +11,13 @@
   <description>
 Do you like my mods? You can support me on Ko-Fi: https://ko-fi.com/sokyran
 
-Vanilla Expanded adds many chemfuel operated objects to the game. However, none of them can be refueled or interacted with using Rimefeller pipes.
+There are mods, including Vanilla Expanded ones which add many chemfuel operated objects to the game. However, none of them can be refueled or interacted with using Rimefeller pipes.
 
 This is where this mod comes in. It allows you to automatically refuel Vanilla Expanded things with the use of convenient pipes placed right under them.
 
-Please note: by default only small amount of objects is supported. To enable more, you need to go into Vanilla Expanded Framework settings and enable them there.
+Please note: by default only small amount of objects is supported. To enable more, you need to go into Vanilla Expanded Framework settings and enable more there.
 
-By default, chemfuel pump (Vanilla Furniture - Power) and pipeline junction (Vanilla Factions - Ancients) can be drained into your Rimefeller tanks. Pipeline junction still needs hacking first, and chemfuel pump will still drop chemfuel on ground if your tanks are full.
+By default, infinite chemreactor (vanilla),  chemfuel pump (Vanilla Furniture - Power) and pipeline junction (Vanilla Factions - Ancients) can be drained into your Rimefeller tanks. Pipeline junction still needs hacking first, and chemfuel pump will still drop chemfuel on ground if your tanks are full.
 
 You may also enable refueling for chemfuel generator (Vanilla RimWorld, Vanilla Furniture - Power, Vanilla Factions - Ancients), flame turrets (Vanilla Furniture - Security), chemboiler, chemlamps (Vanilla Factions - Settlers).
 

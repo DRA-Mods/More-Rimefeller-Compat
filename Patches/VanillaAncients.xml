@@ -13,7 +13,7 @@
         <value>
           <li Class="Rimefeller.CompProperties_Pipe"/>
           <li>
-            <compClass>VanillaExpandedRimefeller.JunctionToPipeNetComp</compClass>
+            <compClass>MoreRimefellerCompat.JunctionToPipeNetComp</compClass>
           </li>
         </value>
       </li>

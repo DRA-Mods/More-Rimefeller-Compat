@@ -7,23 +7,23 @@
     <li>1.3</li>
   </supportedVersions>
   <author>Sokyran, Hush</author>
-  <!--<url>https://github.com/</url>-->
+  <url>https://github.com/DRA-Mods/More-Rimefeller-Compat</url>
   <description>
-    Vanilla Expanded adds many chemfuel operated objects to the game. However, none of them can be refueled or interacted with using Rimefeller pipes.
+Do you like my mods? You can support me on Ko-Fi: https://ko-fi.com/sokyran
 
-    This is where this mod comes in. It allows you to automatically refuel Vanilla Expanded things with the use of convenient pipes placed right under them.
+Vanilla Expanded adds many chemfuel operated objects to the game. However, none of them can be refueled or interacted with using Rimefeller pipes.
 
-    Please note: by default only small amount of objects is supported. To enable more, you need to go into Vanilla Expanded Framework settings and enable them there.
+This is where this mod comes in. It allows you to automatically refuel Vanilla Expanded things with the use of convenient pipes placed right under them.
 
-    By default, chemfuel pump (Vanilla Furniture - Power) and pipeline junction (Vanilla Factions - Ancients) can be drained into your Rimefeller tanks. Pipeline junction still needs hacking first, and chemfuel pump will still drop chemfuel on ground if your tanks are full.
+Please note: by default only small amount of objects is supported. To enable more, you need to go into Vanilla Expanded Framework settings and enable them there.
 
-    You may also enable refueling for chemfuel generator (Vanilla RimWorld, Vanilla Furniture - Power, Vanilla Factions - Ancients), flame turrets (Vanilla Furniture - Security), chemboiler, chemlamps (Vanilla Factions - Settlers).
+By default, chemfuel pump (Vanilla Furniture - Power) and pipeline junction (Vanilla Factions - Ancients) can be drained into your Rimefeller tanks. Pipeline junction still needs hacking first, and chemfuel pump will still drop chemfuel on ground if your tanks are full.
 
-    I was originally against supporting Vanilla Factions - Settlers as their technology isn't the highest tech... But decided to let it in as an option in case anyone likes it.
+You may also enable refueling for chemfuel generator (Vanilla RimWorld, Vanilla Furniture - Power, Vanilla Factions - Ancients), flame turrets (Vanilla Furniture - Security), chemboiler, chemlamps (Vanilla Factions - Settlers).
 
-    Sadly, no support for factories from Vanilla Factions - Mechanoids. They're a bit complex and require a bit more work to get working properly.
+I was originally against supporting Vanilla Factions - Settlers as their technology isn't the highest tech... But decided to let it in as an option in case anyone likes it.
 
-    Do you like my mods? You can support me on Ko-Fi: https://ko-fi.com/sokyran
+Sadly, no support for factories from Vanilla Factions - Mechanoids. They're a bit complex and require a bit more work to get working properly.
   </description>
   <modDependencies>
     <li>

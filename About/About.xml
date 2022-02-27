@@ -17,11 +17,22 @@ This is where this mod comes in. It allows you to automatically refuel Vanilla E
 
 Please note: by default only small amount of objects is supported. To enable more, you need to go into Vanilla Expanded Framework settings and enable more there.
 
-By default, infinite chemreactor (vanilla),  chemfuel pump (Vanilla Furniture - Power) and pipeline junction (Vanilla Factions - Ancients) can be drained into your Rimefeller tanks. Pipeline junction still needs hacking first, and chemfuel pump will still drop chemfuel on ground if your tanks are full.
+By default, infinite chemreactor (vanilla), chemfuel pump (Vanilla Furniture - Power), pipeline junction (Vanilla Factions - Ancients), and bioreactor (BioReactor) can be drained into your Rimefeller tanks. Pipeline junction still needs hacking first, and the buildings will still drop chemfuel on ground if your chemfuel tanks are full.
 
-You may also enable refueling for chemfuel generator (Vanilla RimWorld, Vanilla Furniture - Power, Vanilla Factions - Ancients), flame turrets (Vanilla Furniture - Security), chemboiler, chemlamps (Vanilla Factions - Settlers).
+There's also several other mods that support refueling with the help of Rimefeller pipes. Full list of supported mods:
 
-I was originally against supporting Vanilla Factions - Settlers as their technology isn't the highest tech... But decided to let it in as an option in case anyone likes it.
+- Advanced Chemfuel Generator
+- BioReactor
+- Chemfuel Powered Portable Generator
+- Comigo's Nutrition
+- Higher Power
+- M-13's ChemFuel Generators
+- Simple Utilities: Wall
+- Transport Cargo Pod
+- Vanilla Factions Expanded - Ancients
+- Vanilla Factions Expanded - Settlers
+- Vanilla Furniture Expanded - Power
+- Vanilla Furniture Expanded - Security
 
 Sadly, no support for factories from Vanilla Factions - Mechanoids. They're a bit complex and require a bit more work to get working properly.
   </description>

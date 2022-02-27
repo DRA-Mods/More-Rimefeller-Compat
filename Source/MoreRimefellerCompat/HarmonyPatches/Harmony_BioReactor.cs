@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using HarmonyLib;
@@ -12,6 +13,10 @@ namespace MoreRimefellerCompat.HarmonyPatches
     [HarmonyPatch]
     public static class Harmony_BioReactor
     {
+        [UsedImplicitly]
+        private static bool Prepare()
+            => AccessTools.Method("BioReactor.Building_BioReactor:MakeFuel") != null;
+
         [UsedImplicitly]
         private static MethodBase TargetMethod() 
             => AccessTools.Method("BioReactor.Building_BioReactor:MakeFuel");

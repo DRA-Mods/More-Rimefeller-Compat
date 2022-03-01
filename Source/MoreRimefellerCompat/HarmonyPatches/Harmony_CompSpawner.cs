@@ -1,21 +1,23 @@
 ﻿using System.Linq;
 using HarmonyLib;
+using JetBrains.Annotations;
 using Rimefeller;
 using RimWorld;
 using Verse;
 
-namespace MoreRimefellerCompat
+namespace MoreRimefellerCompat.HarmonyPatches
 {
     [HarmonyPatch(typeof(CompSpawner), nameof(CompSpawner.TryDoSpawn))]
-    internal static class PatchCompSpawner
+    internal static class Harmony_CompSpawner
     {
-        public static bool Prefix(CompSpawner __instance)
+        [UsedImplicitly]
+        private static bool Prefix(CompSpawner __instance)
         {
             if (!__instance.parent.Spawned)
                 return false;
 
             if (__instance.PropsSpawner.thingToSpawn != ThingDefOf.Chemfuel)
-                return false;
+                return true;
 
             var pipe = __instance.parent.GetComp<CompPipe>();
             if (pipe == null)

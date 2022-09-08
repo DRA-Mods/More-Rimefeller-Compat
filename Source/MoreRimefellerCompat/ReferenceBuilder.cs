@@ -7,7 +7,7 @@ using System.Text;
 using Mono.Cecil;
 using Verse;
 
-namespace VanillaExpandedRimefeller
+namespace MoreRimefellerCompat
 {
     // Taken from, slightly modified:
     // https://github.com/rwmt/Multiplayer-Compatibility/blob/d30d441a6bcbe0861c595757b30c96d055e43f56/Source/ReferenceBuilder.cs

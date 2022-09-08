@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Linq;
+using MoreRimefellerCompat;
 using Rimefeller;
 using RimWorld;
 using Verse;
 using VFEAncients;
 
-namespace MoreRimefellerCompat
+namespace VanillaAncientsPatch
 {
     public class JunctionToPipeNetImpl : JunctionToPipeNetComp.IJunctionToPipeNet
     {

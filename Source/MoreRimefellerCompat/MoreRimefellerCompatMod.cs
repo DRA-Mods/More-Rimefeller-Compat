@@ -1,25 +1,29 @@
 ﻿using HarmonyLib;
+#if IDEOLOGY
+using MoreRimefellerCompat.HarmonyPatches;
+#endif
+using MoreRimefellerCompat.Implementations;
 using Verse;
 
-namespace MoreRimefellerCompat
+namespace MoreRimefellerCompat;
+
+public class MoreRimefellerCompatMod : Mod
 {
-    public class MoreRimefellerCompatMod : Mod
+    private static Harmony harmony;
+
+    public static Harmony Harmony => harmony ??= new Harmony("Dra.MoreRimefellerCompat");
+
+    public MoreRimefellerCompatMod(ModContentPack content) : base(content)
     {
-        private static Harmony harmony;
+        Harmony.PatchAll();
 
-        public static Harmony Harmony => harmony ??= new Harmony("Dra.MoreRimefellerCompat");
+        if (AccessTools.TypeByName("VFEAncients.Building_PipelineJunction") != null)
+            JunctionToPipeNetComp.onPostSpawnSetup = comp => new JunctionToPipeNetImpl(comp);
 
-        public MoreRimefellerCompatMod(ModContentPack content) : base(content)
-        {
-            var assembliesDirectory = ModContentPack.GetAllFilesForModPreserveOrder(content, "Referenced/", f => f.ToLower() == ".dll");
-
-            Harmony.PatchAll();
-            AssemblyLoader.LoadAssembly(assembliesDirectory, "VanillaPowerPatch.dll", "vanillaexpanded.vfepower");
-            AssemblyLoader.LoadAssembly(assembliesDirectory, "VanillaAncientsPatch.dll", "vanillaexpanded.vfea");
-
-#if DEBUG
-            ReferenceBuilder.Restore(content);
+#if IDEOLOGY
+            var method = AccessTools.Method("VanillaPowerExpanded.CompChemfuelPump:CompTick");
+            if (method != null)
+                Harmony.Patch(method, prefix: new HarmonyMethod(typeof(Harmony_ChemfuelPump), nameof(Harmony_ChemfuelPump.Prefix)));
 #endif
-        }
     }
 }

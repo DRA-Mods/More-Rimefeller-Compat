@@ -26,7 +26,7 @@ public class JunctionToPipeNetComp : ThingComp
 
         void CompTick();
     }
-        
+
     private class DummyImplementation : IJunctionToPipeNet
     {
         public void PostSpawnSetup(bool respawningAfterLoad)

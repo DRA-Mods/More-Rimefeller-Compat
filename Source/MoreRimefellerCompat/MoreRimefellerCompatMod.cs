@@ -12,7 +12,10 @@ public class MoreRimefellerCompatMod : Mod
 
     public MoreRimefellerCompatMod(ModContentPack content) : base(content)
     {
-        Harmony.PatchAll();
+        LongEventHandler.ExecuteWhenFinished(() =>
+        {
+            Harmony.PatchAll();
+        });
 
         if (AccessTools.TypeByName("VFEAncients.Building_PipelineJunction") != null)
             JunctionToPipeNetComp.onPostSpawnSetup = comp => new JunctionToPipeNetImpl(comp);

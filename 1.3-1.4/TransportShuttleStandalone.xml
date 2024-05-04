@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="VFECore.PatchOperationToggableSequence">
+    <enabled>True</enabled>
+    <mods>
+      <li>Rimefeller</li>
+      <li>Transport Shuttle Standalone</li>
+    </mods>
+    <label>Transport Shuttles refuelable by Rimefeller pipes (always active if SRTS is active):</label>
+    <operations>
+      <li Class="PatchOperationFindMod">
+        <mods>
+          <li>SRTS Expanded</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[@Name="NECShipBase"]/comps</xpath>
+          <value>
+            <li Class="Rimefeller.CompProperties_Pipe"/>
+          </value>
+        </nomatch>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

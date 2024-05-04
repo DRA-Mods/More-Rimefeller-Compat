@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
   <Operation Class="VFECore.PatchOperationToggableSequence">
-    <enabled>True</enabled>
+    <enabled>False</enabled>
     <mods>
       <li>Rimefeller</li>
-      <li>BioReactor</li>
+      <li>Simple Utilities: Wall</li>
     </mods>
-    <label>Advanced Chemfuel Generator drainable by Rimefeller pipes:</label>
+    <label>Fencepost Chemlamp is refuelable by Rimefeller pipes:</label>
     <operations>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="BioReactorBase"]/comps</xpath>
+        <xpath>/Defs/ThingDef[defName="Owl_Fencepost_Chemlamp"]/comps</xpath>
         <value>
           <li Class="Rimefeller.CompProperties_Pipe"/>
         </value>

@@ -6,7 +6,7 @@
       <li>Rimefeller</li>
       <li>Vanilla Factions Expanded - Settlers</li>
     </mods>
-    <label>Chemboiler refuelable by Rimefeller pipes:</label>
+    <label>Chemboiler is refuelable by Rimefeller pipes:</label>
     <operations>
       <li Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="ChemBoiler"]/comps</xpath>
@@ -22,7 +22,7 @@
       <li>Rimefeller</li>
       <li>Vanilla Factions Expanded - Settlers</li>
     </mods>
-    <label>Chemlamp by Rimefeller pipes:</label>
+    <label>Chemlamp is refuelable by Rimefeller pipes:</label>
     <operations>
       <li Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="Chemlamp"]/comps</xpath>
@@ -38,7 +38,7 @@
       <li>Rimefeller</li>
       <li>Vanilla Factions Expanded - Settlers</li>
     </mods>
-    <label>Chemchemlamp post refuelable by Rimefeller pipes:</label>
+    <label>Chemchemlamp post is refuelable by Rimefeller pipes:</label>
     <operations>
       <li Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="ChemlampPost"]/comps</xpath>

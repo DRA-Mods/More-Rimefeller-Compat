@@ -23,7 +23,6 @@ internal static class Harmony_CompSpawner
                                               spawner.thingToSpawn == ThingDefOf.Chemfuel));
     }
 
-    [UsedImplicitly]
     private static bool Prefix(CompSpawner __instance)
     {
         if (!__instance.parent.Spawned)

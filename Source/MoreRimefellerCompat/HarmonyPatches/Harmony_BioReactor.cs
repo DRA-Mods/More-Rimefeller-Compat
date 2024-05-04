@@ -12,7 +12,6 @@ namespace MoreRimefellerCompat.HarmonyPatches;
 [HarmonyPatch]
 public static class Harmony_BioReactor
 {
-    [UsedImplicitly]
     private static bool Prepare(MethodBase targetMethod)
     {
         if (targetMethod == null)
@@ -25,11 +24,9 @@ public static class Harmony_BioReactor
                         type.IsAssignableFrom(def.thingClass));
     }
 
-    [UsedImplicitly]
     private static MethodBase TargetMethod() 
         => AccessTools.DeclaredMethod("BioReactor.Building_BioReactor:MakeFuel");
 
-    [UsedImplicitly]
     private static bool Prefix(Building __instance)
     {
         var pipe = __instance.GetComp<CompPipe>();

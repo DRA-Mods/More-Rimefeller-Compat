@@ -1,15 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Configuration>
   <Excluded>
-    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MoreRimefellerCompat\.git</exclude>
-    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MoreRimefellerCompat\.vs</exclude>
-    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MoreRimefellerCompat\Source\.vs</exclude>
-    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MoreRimefellerCompat\Source\MoreRimefellerCompat\.vs</exclude>
-    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MoreRimefellerCompat\Source\MoreRimefellerCompat\bin</exclude>
-    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MoreRimefellerCompat\Source\MoreRimefellerCompat\obj</exclude>
-    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MoreRimefellerCompat\Source\VanillaAncientsPatch\bin</exclude>
-    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MoreRimefellerCompat\Source\VanillaAncientsPatch\obj</exclude>
-    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MoreRimefellerCompat\Source\VanillaPowerPatch\bin</exclude>
-    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MoreRimefellerCompat\Source\VanillaPowerPatch\obj</exclude>
+    <exclude>.git</exclude>
+    <exclude>.idea</exclude>
+    <exclude>.vs</exclude>
+    <exclude>Source\.vs</exclude>
+    <exclude>Source\MoreRimefellerCompat\.vs</exclude>
+    <exclude>Source\MoreRimefellerCompat\bin</exclude>
+    <exclude>Source\MoreRimefellerCompat\obj</exclude>
   </Excluded>
 </Configuration>

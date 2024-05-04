@@ -61,5 +61,6 @@ Sadly, no support for factories from Vanilla Factions - Mechanoids. They're a bi
     <li>vanillaexpanded.vfea</li>
     <li>vanillaexpanded.vfepower</li>
     <li>vanillaexpanded.vfesecurity</li>
+    <li>scpchemfuel.appliances</li>
   </loadAfter>
 </ModMetaData>

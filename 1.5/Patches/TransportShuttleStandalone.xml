@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
   <Operation Class="VFECore.PatchOperationToggableSequence">
-    <enabled>True</enabled>
+    <enabled>False</enabled>
     <mods>
       <li>Rimefeller</li>
       <li>Transport Shuttle Standalone</li>

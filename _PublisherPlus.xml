@@ -5,6 +5,7 @@
     <exclude>.idea</exclude>
     <exclude>.vs</exclude>
     <exclude>Source\.vs</exclude>
+    <exclude>Source\MoreRimefellerCompat\.idea</exclude>
     <exclude>Source\MoreRimefellerCompat\.vs</exclude>
     <exclude>Source\MoreRimefellerCompat\bin</exclude>
     <exclude>Source\MoreRimefellerCompat\obj</exclude>

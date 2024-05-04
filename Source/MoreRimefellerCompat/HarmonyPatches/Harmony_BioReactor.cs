@@ -13,12 +13,21 @@ namespace MoreRimefellerCompat.HarmonyPatches;
 public static class Harmony_BioReactor
 {
     [UsedImplicitly]
-    private static bool Prepare()
-        => AccessTools.Method("BioReactor.Building_BioReactor:MakeFuel") != null;
+    private static bool Prepare(MethodBase targetMethod)
+    {
+        if (targetMethod == null)
+            return TargetMethod() != null;
+
+        var type = targetMethod.DeclaringType!;
+        // Only patch if there's any bioreactor ThingDef with a pipe comp.
+        return DefDatabase<ThingDef>.AllDefsListForReading
+            .Any(def => def.GetCompProperties<CompProperties_Pipe>() != null &&
+                        type.IsAssignableFrom(def.thingClass));
+    }
 
     [UsedImplicitly]
     private static MethodBase TargetMethod() 
-        => AccessTools.Method("BioReactor.Building_BioReactor:MakeFuel");
+        => AccessTools.DeclaredMethod("BioReactor.Building_BioReactor:MakeFuel");
 
     [UsedImplicitly]
     private static bool Prefix(Building __instance)

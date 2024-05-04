@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using System.Reflection;
 using HarmonyLib;
 using JetBrains.Annotations;
 using Rimefeller;
@@ -10,6 +11,18 @@ namespace MoreRimefellerCompat.HarmonyPatches;
 [HarmonyPatch(typeof(CompSpawner), nameof(CompSpawner.TryDoSpawn))]
 internal static class Harmony_CompSpawner
 {
+    private static bool Prepare(MethodBase targetMethod)
+    {
+        if (targetMethod != null)
+            return true;
+
+        // Only patch if there's any building using CompSpawner that spawns chemfuel and it has CompPipe.
+        return DefDatabase<ThingDef>.AllDefsListForReading
+            .Any(def => def.GetCompProperties<CompProperties_Pipe>() != null &&
+                        def.comps.Any(comp => comp is CompProperties_Spawner spawner &&
+                                              spawner.thingToSpawn == ThingDefOf.Chemfuel));
+    }
+
     [UsedImplicitly]
     private static bool Prefix(CompSpawner __instance)
     {
@@ -36,6 +49,7 @@ internal static class Harmony_CompSpawner
             {
                 Messages.Message("MessageCompSpawnerSpawnedItem".Translate(__instance.PropsSpawner.thingToSpawn.LabelCap), __instance.parent, MessageTypeDefOf.PositiveEvent);
             }
+
             return false;
         }
 

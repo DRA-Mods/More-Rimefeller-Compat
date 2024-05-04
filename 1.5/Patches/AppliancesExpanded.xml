@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="VFECore.PatchOperationToggableSequence">
+    <enabled>False</enabled>
+    <mods>
+      <li>Rimefeller</li>
+      <li>Appliances Expanded</li>
+    </mods>
+    <label>Appliances Expanded chemfuel turbine is refuelable by Rimefeller pipes:</label>
+    <operations>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="CA_ChemfuelTurbine"]/comps</xpath>
+        <value>
+          <li Class="Rimefeller.CompProperties_Pipe"/>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+
+  <Operation Class="VFECore.PatchOperationToggableSequence">
+    <enabled>False</enabled>
+    <mods>
+      <li>Rimefeller</li>
+      <li>Appliances Expanded</li>
+    </mods>
+    <label>Appliances Expanded ticking crafting stations are refuelable by Rimefeller pipes:</label>
+    <operations>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="CA_ChemfuelCrematorium" or defName="CE_ChemfuelDeepFrier" or defName="CE_ChemfuelGrill" or defName="CE_ChemfuelPot" or defName="CA_ChemfuelStoveLarge" or defName="CE_FueledSmithyLarge"]/comps</xpath>
+        <value>
+          <li Class="Rimefeller.CompProperties_Pipe"/>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+
+  <Operation Class="VFECore.PatchOperationToggableSequence">
+    <enabled>False</enabled>
+    <mods>
+      <li>Rimefeller</li>
+      <li>Appliances Expanded</li>
+    </mods>
+    <label>Appliances Expanded non-ticking crafting stations now tick and are refuelable by Rimefeller pipes:</label>
+    <operations>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="CA_ChemfuelSmithy" or defName="CA_ChemfuelSmelter" or defName="CE_ChemfuelStove"]/tickerType</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="CA_ChemfuelSmithy" or defName="CA_ChemfuelSmelter" or defName="CE_ChemfuelStove"]/tickerType</xpath>
+          <value>
+            <tickerType>Normal</tickerType>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="CA_ChemfuelSmithy" or defName="CA_ChemfuelSmelter" or defName="CE_ChemfuelStove"]</xpath>
+          <value>
+            <tickerType>Normal</tickerType>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="CA_ChemfuelSmithy" or defName="CA_ChemfuelSmelter" or defName="CE_ChemfuelStove"]/comps</xpath>
+        <value>
+          <li Class="Rimefeller.CompProperties_Pipe"/>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+
+  <Operation Class="VFECore.PatchOperationToggableSequence">
+    <enabled>False</enabled>
+    <mods>
+      <li>Rimefeller</li>
+      <li>Appliances Expanded</li>
+    </mods>
+    <label>Appliances Expanded light sources are refuelable by Rimefeller pipes:</label>
+    <operations>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="CA_Sunlamp" or defName="CA_ChemfuelStandingLamp" or defName="CA_ChemfuelFloodlight" or defName="CAS_ChemfuelWallLight" or defName="CA_ChemfuelBrazier" or defName="CA_ChemfuelBrazierDark" or defName="CA_SunlampDark"]/comps</xpath>
+        <value>
+          <li Class="Rimefeller.CompProperties_Pipe"/>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+
+  <Operation Class="VFECore.PatchOperationToggableSequence">
+    <enabled>False</enabled>
+    <mods>
+      <li>Rimefeller</li>
+      <li>Appliances Expanded</li>
+    </mods>
+    <label>Appliances Expanded cooler and heater are refuelable by Rimefeller pipes:</label>
+    <operations>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="CAS_ChemfuelCooler" or defName="CAS_ChemfuelHeater"]/comps</xpath>
+        <value>
+          <li Class="Rimefeller.CompProperties_Pipe" />
+        </value>
+      </li>
+    </operations>
+  </Operation>
+
+  <Operation Class="VFECore.PatchOperationToggableSequence">
+    <enabled>False</enabled>
+    <mods>
+      <li>Rimefeller</li>
+      <li>Appliances Expanded</li>
+    </mods>
+    <label>Appliances Expanded excavator is refuelable by Rimefeller pipes:</label>
+    <operations>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="SCP_ChemDrill"]/comps</xpath>
+        <value>
+          <li Class="Rimefeller.CompProperties_Pipe"/>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

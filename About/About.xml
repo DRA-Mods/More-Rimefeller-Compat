@@ -19,9 +19,9 @@ This is where this mod comes in. It allows you to automatically refuel Vanilla E
 
 Please note: by default only small amount of objects is supported. To enable more, you need to go into Vanilla Expanded Framework settings and enable more there.
 
-By default, infinite chemreactor (vanilla), chemfuel pump (1.3, Vanilla Furniture - Power), pipeline junction (Vanilla Factions - Ancients), and bioreactor (BioReactor) can be drained into your Rimefeller tanks. Pipeline junction still needs hacking first, and the buildings will still drop chemfuel on ground if your chemfuel tanks are full.
+By default, infinite chemreactor (vanilla), chemfuel pump (1.3, Vanilla Furniture - Power), pipeline junction (Vanilla Factions - Ancients), bioreactor (BioReactor), and refueling pump (Vanilla Vehicles Expanded) can be refueled/drained by your Rimefeller tanks. Pipeline junction still needs hacking first, and the buildings will still drop chemfuel on ground if your chemfuel tanks are full.
 
-There's also several other mods that support refueling with the help of Rimefeller pipes. Full list of supported mods:
+Full list of supported mods (depending on RimWorld version):
 
 - Advanced Chemfuel Generator
 - Appliances Expanded
@@ -32,6 +32,7 @@ There's also several other mods that support refueling with the help of Rimefell
 - M-13's ChemFuel Generators
 - Simple Utilities: Wall
 - Transport Cargo Pod
+- Transport Shuttle Standalone
 - Vanilla Factions Expanded - Ancients
 - Vanilla Factions Expanded - Settlers
 - Vanilla Furniture Expanded - Power

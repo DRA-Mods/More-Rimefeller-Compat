@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="VFECore.PatchOperationToggableSequence">
+    <enabled>True</enabled>
+    <mods>
+      <li>Rimefeller</li>
+      <li>Vanilla Vehicles Expanded</li>
+    </mods>
+    <label>Refueling Pump refuelable by Rimefeller pipes:</label>
+    <operations>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="VVE_RefuelingPump"]/comps</xpath>
+        <value>
+          <li Class="Rimefeller.CompProperties_Pipe"/>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>
